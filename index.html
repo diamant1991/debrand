@@ -20,6 +20,7 @@
 </head>
 <body>
 
+
 <header class="header">
 	<div class="container clearfix">
 		<div class="logo">
@@ -113,7 +114,7 @@
 	<div class="container clearfix">
 		<article class="center-wrapper">
 			<header>Top 25 attractions</header>
-			<div class="carousel-attr">
+			<!--<div class="carousel-attr">
 				<ul class="bxslider clearfix" id="carousel-attr">
 				 	<li>
 				 		<div class="attr-img">
@@ -160,12 +161,89 @@
 				 			<p>Emerald & turquoise lakes</p>
 				 		</div>
 				 		<div class="attr-desc">
-				 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facere architecto omnis soluta eos fugiat cupiditate incidunt. Doloribus tempore commodi reiciendis et architecto dolore dignissimos excepturi ullam esse iure, officiis.
+				 			lorem ipsum dolor sit amet, consectetur adipisicing elit. qui facere architecto omnis soluta eos fugiat cupiditate incidunt. doloribus tempore commodi reiciendis et architecto dolore dignissimos excepturi ullam esse iure, officiis.
 				 		</div>
 				   </li>
 				</ul>
+			</div>-->
+			<div class="carousel-attr">
+				<button class="prev-no-style"></button>
+    			<button class="next-no-style"></button>
+			    <div class="carousel-no-style">
+			        <ul>
+			            <li>
+			            	<div class="car-wrapper">
+				           		<div class="attr-img">
+							 			<img src="images/car-1.jpg" height="135" width="165" alt="">
+							 		</div>
+							 		<div class="attr-title">
+							 			<p>People:</p>
+							 			<p>Heart of Tajik hospitality</p>
+							 		</div>
+							 		<div class="attr-desc">
+							 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facere architecto omnis soluta eos fugiat cupiditate incidunt. Doloribus tempore commodi reiciendis et architecto dolore dignissimos excepturi ullam esse iure, officiis.
+							 		</div>
+						 		</div>
+			            </li>
+			            <li>
+			            	<div class="car-wrapper">
+				            	<div class="attr-img">
+							 			<img src="images/car-1.jpg" height="135" width="165" alt="">
+							 		</div>
+							 		<div class="attr-title">
+							 			<p>People:</p>
+							 			<p>Heart of Tajik hospitality</p>
+							 		</div>
+							 		<div class="attr-desc">
+							 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facere architecto omnis soluta eos fugiat cupiditate incidunt. Doloribus tempore commodi reiciendis et architecto dolore dignissimos excepturi ullam esse iure, officiis.
+							 		</div>
+						 		</div>
+			            </li>
+			            <li>
+			            	<div class="car-wrapper">
+				            	<div class="attr-img">
+							 			<img src="images/car-1.jpg" height="135" width="165" alt="">
+							 		</div>
+							 		<div class="attr-title">
+							 			<p>People:</p>
+							 			<p>Heart of Tajik hospitality</p>
+							 		</div>
+							 		<div class="attr-desc">
+							 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facere architecto omnis soluta eos fugiat cupiditate incidunt. Doloribus tempore commodi reiciendis et architecto dolore dignissimos excepturi ullam esse iure, officiis.
+							 		</div>
+						 		</div>
+			            </li>
+			            <li>
+			            	<div class="car-wrapper">
+				            	<div class="attr-img">
+							 			<img src="images/car-1.jpg" height="135" width="165" alt="">
+							 		</div>
+							 		<div class="attr-title">
+							 			<p>People:</p>
+							 			<p>Heart of Tajik hospitality</p>
+							 		</div>
+							 		<div class="attr-desc">
+							 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facere architecto omnis soluta eos fugiat cupiditate incidunt. Doloribus tempore commodi reiciendis et architecto dolore dignissimos excepturi ullam esse iure, officiis.
+							 		</div>
+						 		</div>
+			            </li>
+			            <li>
+			            	<div class="car-wrapper">
+				            	<div class="attr-img">
+							 			<img src="images/car-1.jpg" height="135" width="165" alt="">
+							 		</div>
+							 		<div class="attr-title">
+							 			<p>People:</p>
+							 			<p>Heart of Tajik hospitality</p>
+							 		</div>
+							 		<div class="attr-desc">
+							 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facere architecto omnis soluta eos fugiat cupiditate incidunt. Doloribus tempore commodi reiciendis et architecto dolore dignissimos excepturi ullam esse iure, officiis.
+							 		</div>
+						 		</div>
+			            </li>
+			        </ul>
+			    </div>
 			</div>
-
 			<div class="bot-block clearfix">
 				<div class="about_us">
 					<h4>About us</h4>
@@ -217,8 +295,7 @@
 	<div class="top-block">
 		<div class="container clearfix">
 			<div class="foot-menu">
-				<ul class="clearfix">
-					<li>
+				<ul class="clearfix"><li>
 						<h5>ABOUT TAJIKISTAN</h5>
 						<ul>
 							<li><a href="#">History</a></li>
@@ -299,8 +376,17 @@
 
 
 <script src="js/jquery.js"></script>
+<script src="js/jquery.jcarousellite.js"></script>
 <script src="js/jquery.bxslider.min.js"></script>
 <script>
+	$(function() {
+      $(".carousel-no-style").jCarouselLite({
+     		visible: 4,
+         btnNext: ".next-no-style",
+         btnPrev: ".prev-no-style"
+      });
+   });
+
 	$(document).ready(function(){
 	  $('.main-slide').bxSlider({
 		  mode: 'fade'
