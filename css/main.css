@@ -297,10 +297,21 @@ footer .bot-block {
 }
 .weather {
   float: left;
-  width: 280px;
-  text-align: center;
-  height: 40px;
-  padding-top: 6px;
+  width: 136px;
+  height: 27px;
+  font-size: 12px;
+  color: white;
+  margin-top: 8px;
+  margin-left: 78px;
+  background: url(../images/weather.png) no-repeat;
+}
+.weather .temp {
+  display: inline-block;
+  padding-top: 13px;
+  padding-left: 25px;
+}
+.weather .local {
+  padding-left: 26px;
 }
 .developed {
   float: right;
